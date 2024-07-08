@@ -314,4 +314,48 @@ th {
   outline-offset: 0.25rem;
 }
 
+.flow > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.radius {
+  border-radius: 0.5rem;
+}
+
+.splitter > :last-child {
+  margin-top: 1.33rem;
+}
+@media (min-width: 48em) {
+  .splitter {
+    display: flex;
+  }
+  .splitter > * {
+    flex-grow: 1;
+  }
+  .splitter > :last-child {
+    margin-top: 0;
+    margin-left: 1.33rem;
+    min-width: 22rem;
+  }
+}
+
+.wrapper {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.33rem;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
 /*# sourceMappingURL=global.css.map */
